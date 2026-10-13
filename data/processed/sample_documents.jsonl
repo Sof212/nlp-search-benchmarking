@@ -1,0 +1,5 @@
+{"doc_id": "d1", "text": "Python is a programming language used for machine learning."}
+{"doc_id": "d2", "text": "BM25 is a ranking function used in information retrieval."}
+{"doc_id": "d3", "text": "Dense embeddings represent text as vectors."}
+{"doc_id": "d4", "text": "SPLADE is a sparse neural retrieval model."}
+{"doc_id": "d5", "text": "Cross encoders rerank query document pairs."}

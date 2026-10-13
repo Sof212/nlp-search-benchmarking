@@ -1,0 +1,18 @@
+method: hybrid
+top_k: 100
+retriever:
+  method: rrf
+  candidate_pool_size: 100
+  rrf_k: 60
+  alpha: 0.5
+  beta: 0.5
+  bm25_config:
+    k1: 1.5
+    b: 0.75
+  dense_config:
+    model_name: intfloat/e5-small-v2
+    batch_size: 32
+    normalize_embeddings: true
+    query_prefix: "query: "
+    document_prefix: "passage: "
+    device:

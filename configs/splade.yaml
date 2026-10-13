@@ -1,0 +1,7 @@
+method: splade
+top_k: 100
+retriever:
+  model_name: naver/splade-cocondenser-ensembledistil
+  batch_size: 8
+  max_length: 256
+  device:

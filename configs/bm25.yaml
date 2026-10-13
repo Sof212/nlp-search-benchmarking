@@ -1,0 +1,5 @@
+method: bm25
+top_k: 100
+retriever:
+  k1: 1.5
+  b: 0.75

@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nlp-search-benchmark"
+version = "0.1.0"
+description = "Benchmark TF-IDF, BM25, SPLADE, dense, hybrid, and cross-encoder search strategies."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "pandas",
+  "scikit-learn",
+  "tqdm",
+  "pyyaml",
+  "rank-bm25",
+  "ir_datasets",
+  "streamlit",
+  "sentence-transformers",
+  "transformers",
+  "torch",
+  "faiss-cpu",
+]
+
+[project.optional-dependencies]
+eval = ["ir-measures", "ranx"]
+dev = ["pytest", "ruff", "black"]
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

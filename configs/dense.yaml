@@ -1,0 +1,9 @@
+method: dense
+top_k: 100
+retriever:
+  model_name: intfloat/e5-small-v2
+  batch_size: 32
+  normalize_embeddings: true
+  query_prefix: "query: "
+  document_prefix: "passage: "
+  device:

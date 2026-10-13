@@ -1,0 +1,5 @@
+method: tfidf
+top_k: 100
+retriever:
+  lowercase: true
+  sublinear_tf: true
